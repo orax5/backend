@@ -1,6 +1,6 @@
 import { Global, Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { UserModule } from './user/user.module';
-import { CreatorModule } from './creator/creator.module';
+//import { CreatorModule } from './creator/creator.module';
 // import { AdminModule } from './admin/admin.module';
 
 import { APP_GUARD, APP_PIPE } from '@nestjs/core';
@@ -19,6 +19,7 @@ import { FileS3Module } from './file-s3/file-s3.module';
 import * as redisStore from 'cache-manager-ioredis';
 import { CacheService } from './cache/cache.service';
 import { JwtAuthGuard } from './auth/jwt-auth';
+import { CreatorModule } from './creator/creator.module';
 
 
 
